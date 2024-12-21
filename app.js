@@ -1,1 +1,22 @@
-console.log("bye")
+console.log("Starting")
+
+//password nZOB2Sh7cJdWNEtv
+
+const express = require('express');
+const mongoose = require('mongoose');
+
+const router = require('./Route/StudentRoute');
+
+const app = express();
+const cors = require('cors');
+
+//Middleware
+
+app.use(express.json());
+app.use(cors());
+//Missing middleware
+
+mongoose.connect("mongodb+srv://admin:nZOB2Sh7cJdWNEtv@cluster0.ndrdz.mongodb.net/")
+.then(()=>console.log("Database connected")).then(()=>{
+    app.listen(3000);
+});
