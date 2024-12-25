@@ -14,9 +14,14 @@ const cors = require('cors');
 
 app.use(express.json());
 app.use(cors());
+app.use("/StudentDetails",router);
 //Missing middleware
 
-mongoose.connect("mongodb+srv://admin:nZOB2Sh7cJdWNEtv@cluster0.ndrdz.mongodb.net/")
+
+
+mongoose.connect("mongodb+srv://admin:nZOB2Sh7cJdWNEtv@cluster0.ndrdz.mongodb.net/HatharaliyaddaPrimary?retryWrites=true&w=majority")
 .then(()=>console.log("Database connected")).then(()=>{
     app.listen(3000);
-});
+})
+
+.catch((err)=>console.log(err));

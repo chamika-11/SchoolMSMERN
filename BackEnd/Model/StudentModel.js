@@ -23,7 +23,7 @@ const studentSchema=new Schema({
         type:String,
         required:true
     },
-    parentphone:{
+    parentPhone:{
         type:Number,
         required:true
     },
@@ -37,6 +37,6 @@ const studentSchema=new Schema({
             required:true
         }
     }]
-});
+},{collection:'Student Details'});
 
 module.exports=mongoose.model("Student",studentSchema);
