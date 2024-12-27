@@ -2,19 +2,19 @@ const student=require("../Model/StudentModel");
 
 //Display Student Data
 const getAllStudentData=async(req,res,next) => {
-    let student;
+    let std;
 
     try{
-        student=await student.find();
+        std=await student.find();
     }catch(err){
         console.log(err);
 }
 
-    if(!student){
+    if(!std){
         return res.status(404).json({message:"User not found"});
     }
 
-    return res.status(200).json({student});
+    return res.status(200).json({std});
 
     };
 
@@ -41,16 +41,16 @@ const addNewStudent=async(req,res,next) => {
 //Data retrieval
 const getStudent=async(req,res,next)=>{
     const id=req.params.id;
-    let student;
+    let std;
 
     try{
-        student=await student.findById(id);
+        std=await student.findById(id);
     }
     catch(err){ 
         console.log(err);
         return res.status(404).json({message:"User not found Student"});
 }
-    return res.status(200).json(student);
+    return res.status(200).json(std);
 }
 
 
@@ -76,19 +76,19 @@ const updateStudent =async(req, res,next)=>{
 //Delete student details
 const deleteStudent =async(req, res, next)=>{
     const id=req.params.id;
-    let student;
+    let std;
 
     try{
-        student=await student.findByIdAndDelete(id);
+        std=await student.findByIdAndDelete(id);
     }catch(err){
         console.log(err);
         return res.status(500).json({message:"Delete failed"});
     }
 
-    if(!student){
+    if(!std){
         return res.status(404).json({message:"User not found"});
     }
-    return res.status(204).json({message:"User deleted successfully"});
+    return res.status(200).json({message:"User deleted successfully"});
 }
 
 
