@@ -1,0 +1,59 @@
+/* Container Styling */
+div {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f7fc;
+    color: #333;
+    text-align: center;
+}
+
+/* Header Styling */
+h1 {
+    color: #4CAF50;
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Header Styling */
+th {
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+}
+
+/* Row Styling for Alternating Colors */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+
+/* Cell Styling */
+td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+}
+
+/* Paragraph Styling */
+p {
+    color: #777;
+    font-size: 18px;
+}

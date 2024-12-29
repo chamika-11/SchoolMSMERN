@@ -21,7 +21,7 @@ app.use("/StudentDetails",router);
 
 mongoose.connect("mongodb+srv://admin:nZOB2Sh7cJdWNEtv@cluster0.ndrdz.mongodb.net/HatharaliyaddaPrimary?retryWrites=true&w=majority")
 .then(()=>console.log("Database connected")).then(()=>{
-    app.listen(3000);
+    app.listen(5000);
 })
 
 .catch((err)=>console.log(err));
