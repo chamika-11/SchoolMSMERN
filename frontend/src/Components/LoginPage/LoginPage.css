@@ -1,0 +1,252 @@
+/* src/components/LoginPage.css */
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+    padding: 20px;
+}
+
+.login-container {
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+    min-height: 600px;
+}
+
+/* Left Side */
+.login-left {
+    flex: 1;
+    background: linear-gradient(135deg, #1a237e, #3949ab);
+    color: white;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.school-info {
+    text-align: center;
+}
+
+.school-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.school-info h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Right Side */
+.login-right {
+    flex: 1;
+    padding: 40px;
+}
+
+.login-form-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Admin Login Header */
+.admin-login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.admin-login-header i {
+    font-size: 2.5rem;
+    color: #1a237e;
+    margin-bottom: 15px;
+}
+
+.admin-login-header h2 {
+    color: #1a237e;
+    margin-bottom: 10px;
+}
+
+.login-subtitle {
+    color: #666;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.input-with-icon input {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.input-with-icon input:focus {
+    border-color: #1a237e;
+    outline: none;
+}
+
+/* Form Options */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+}
+
+.forgot-password {
+    color: #1a237e;
+    text-decoration: none;
+}
+
+/* Login Button */
+.login-button {
+    width: 100%;
+    padding: 15px;
+    background: #1a237e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    position: relative;
+}
+
+.login-button:hover {
+    background: #151b4f;
+}
+
+.login-button.loading {
+    color: transparent;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Error Message */
+.error-message {
+    background: #ffebee;
+    color: #c62828;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Security Notice */
+.security-notice {
+    margin-top: 30px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #666;
+}
+
+.security-notice i {
+    color: #1a237e;
+}
+
+/* Help Section */
+.help-section {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+}
+
+.help-section a {
+    color: #1a237e;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+    }
+
+    .login-left {
+        padding: 30px;
+    }
+
+    .login-right {
+        padding: 30px;
+    }
+
+    .form-options {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-page {
+        padding: 10px;
+    }
+
+    .school-info h1 {
+        font-size: 1.5rem;
+    }
+}

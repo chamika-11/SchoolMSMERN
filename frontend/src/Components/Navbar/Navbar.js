@@ -7,7 +7,6 @@ import './Navbar.css';
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-    const navigate = useNavigate();
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -52,9 +51,8 @@ const Navbar = () => {
                     <Link to="/academics" className="nav-link">Academics</Link>
                     <Link to="/activities" className="nav-link">Activities</Link>
                     <Link to="/gallery" className="nav-link">Gallery</Link>
-                    <Link to="/contact" className="nav-link">Contact</Link>
+                    <Link to="/Contact" className="nav-link">Contact</Link>
                     
-                    {/* Admin Login Button */}
                     <Link to="/loginPage" className="admin-login-btn">
                         <i className="fas fa-user"></i> Admin Login
                     </Link>
