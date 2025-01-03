@@ -1,4 +1,4 @@
-/* src/components/LoginPage.css */
+
 .login-page {
     min-height: 100vh;
     display: flex;
@@ -19,7 +19,6 @@
     min-height: 600px;
 }
 
-/* Left Side */
 .login-left {
     flex: 1;
     background: linear-gradient(135deg, #1a237e, #3949ab);
@@ -45,7 +44,7 @@
     margin-bottom: 10px;
 }
 
-/* Right Side */
+
 .login-right {
     flex: 1;
     padding: 40px;
@@ -56,7 +55,6 @@
     margin: 0 auto;
 }
 
-/* Admin Login Header */
 .admin-login-header {
     text-align: center;
     margin-bottom: 30px;
@@ -77,7 +75,6 @@
     color: #666;
 }
 
-/* Form Styles */
 .form-group {
     margin-bottom: 20px;
 }
@@ -115,7 +112,6 @@
     outline: none;
 }
 
-/* Form Options */
 .form-options {
     display: flex;
     justify-content: space-between;
@@ -135,7 +131,6 @@
     text-decoration: none;
 }
 
-/* Login Button */
 .login-button {
     width: 100%;
     padding: 15px;
@@ -157,7 +152,6 @@
     color: transparent;
 }
 
-/* Loading Spinner */
 .loading-spinner {
     position: absolute;
     top: 50%;
@@ -177,7 +171,6 @@
     }
 }
 
-/* Error Message */
 .error-message {
     background: #ffebee;
     color: #c62828;
@@ -187,7 +180,6 @@
     text-align: center;
 }
 
-/* Security Notice */
 .security-notice {
     margin-top: 30px;
     padding: 15px;
@@ -203,7 +195,6 @@
     color: #1a237e;
 }
 
-/* Help Section */
 .help-section {
     text-align: center;
     margin-top: 30px;
@@ -220,7 +211,6 @@
     gap: 5px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .login-container {
         flex-direction: column;

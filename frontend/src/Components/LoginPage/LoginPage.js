@@ -1,4 +1,3 @@
-// src/components/LoginPage.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LoginPage.css';
@@ -19,13 +18,8 @@ const LoginPage = () => {
         setIsLoading(true);
 
         try {
-            // Simulate API call
             await new Promise(resolve => setTimeout(resolve, 1500));
-            
-            // Add your authentication logic here
             console.log('Admin login attempt:', formData);
-            
-            // Redirect to admin dashboard after successful login
             navigate('/admin-dashboard');
             
         } catch (err) {

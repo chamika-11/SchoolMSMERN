@@ -74,6 +74,7 @@ const updateStudent =async(req, res,next)=>{
 }
 
 
+
 //Delete student details
 const deleteStudent =async(req, res, next)=>{
     const id=req.params.id;
@@ -92,7 +93,6 @@ const deleteStudent =async(req, res, next)=>{
     return res.status(200).json({message:"User deleted successfully"});
 };
 
-//D
 
 exports.getAllStudentData=getAllStudentData;
 exports.addNewStudent=addNewStudent;

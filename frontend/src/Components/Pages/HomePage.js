@@ -6,8 +6,6 @@ const HomePage = () => {
     return (
         
         <div className="home">
-
-            {/* Hero Section */}
             <section className="hero">
                 <div className="hero-content">
                     <h1>Welcome to Hathraliyadda Primary School</h1>
@@ -15,7 +13,6 @@ const HomePage = () => {
                 </div>
             </section>
 
-            {/* Quick Info Section */}
             <section className="quick-info">
                 <div className="info-card">
                     <i className="fas fa-users"></i>
@@ -34,7 +31,6 @@ const HomePage = () => {
                 </div>
             </section>
 
-            {/* Announcements Section */}
             <section className="announcements">
                 <h2>Latest News & Events</h2>
                 <div className="announcement-grid">
