@@ -37,17 +37,17 @@ const HomePage = () => {
                     <div className="announcement-card">
                         <h4>Annual Sports Meet</h4>
                         <p>Join us for our annual sports meet on July 15th</p>
-                        <a href="#">Read More →</a>
+                        
                     </div>
                     <div className="announcement-card">
                         <h4>Parent-Teacher Meeting</h4>
                         <p>Scheduled for next Friday at 2 PM</p>
-                        <a href="#">Read More →</a>
+                        
                     </div>
                     <div className="announcement-card">
                         <h4>Art Exhibition</h4>
                         <p>Student artwork showcase next month</p>
-                        <a href="#">Read More →</a>
+                        
                     </div>
                 </div>
             </section>

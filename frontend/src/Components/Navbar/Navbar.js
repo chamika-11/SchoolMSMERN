@@ -44,16 +44,15 @@ const Navbar = () => {
                             <Link to="/about/staff">Staff</Link>
                         </div>
                     </div>
-
                     <Link to="/academics" className="nav-link">Academics</Link>
                     <Link to="/activities" className="nav-link">Activities</Link>
                     <Link to="/Gallery" className="nav-link">Gallery</Link>
-                    
                     <Link to="/Contact" className="nav-link">Contact</Link>
-                    <Link to="/AddStudent" className="nav-link">Add Student</Link>
-                    
+
+                    <Link to="/TestPage" className="nav-link">Test Page</Link>
+
                     <Link to="/loginPage" className="admin-login-btn">
-                        <i className="fas fa-user"></i> Admin Login
+                    <i className="fas fa-user"></i> Admin Login
                     </Link>
                 </div>
             </div>

@@ -5,6 +5,7 @@ import './AddStudent.css';
 import Navbar from '../Navbar/Navbar';
 
 function AddStudent() {
+    
     const history = useNavigate();
     const [inputs, setInputs] = useState({
         name: "",

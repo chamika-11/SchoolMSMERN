@@ -1,4 +1,4 @@
-const newsEvent = require('../Model/NewsEvent');
+const newsEvent = require('../Model/NewsEventM');
 
 //Display News Event Data
 const newsEventDisplay = async (req, res, next) => {

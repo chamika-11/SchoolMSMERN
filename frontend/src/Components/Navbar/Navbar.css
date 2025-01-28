@@ -24,7 +24,7 @@
 }
 
 .school-name h1 {
-    color: #1a237e;
+    color: #00067c;
     font-size: 1.5rem;
     font-weight: 700;
     margin: 0;
@@ -37,86 +37,118 @@
     margin: 0;
 }
 
-
 .navbar-links {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 30px; 
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 .nav-link {
-    color: #333;
+    color: #2d3748; 
     text-decoration: none;
-    font-weight: 500;
-    padding: 8px 12px;
-    transition: color 0.3s ease;
+    font-weight: 600; 
+    font-size: 0.95rem; 
+    padding: 10px 16px; 
+    border-radius: 6px; 
+    transition: all 0.2s ease-in-out;
 }
 
 .nav-link:hover {
     color: #1a237e;
+    background-color: rgba(26, 35, 126, 0.05); 
 }
-
 
 .dropdown {
     position: relative;
+    height: 100%;
 }
 
 .dropdown-btn {
     background: none;
     border: none;
-    color: #333;
-    font-weight: 500;
-    padding: 8px 12px;
+    color: #2d3748;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 10px 16px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 6px;
+    font-family: inherit;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+.dropdown-btn:hover {
+    background-color: rgba(26, 35, 126, 0.05);
+    color: #1a237e;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 100%;
+    top: calc(100% + 8px); 
     left: 0;
     background: white;
-    min-width: 200px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border-radius: 4px;
+    min-width: 220px; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
     padding: 8px 0;
+    z-index: 1000;
 }
 
 .dropdown-content.show {
     display: block;
+    animation: fadeIn 0.2s ease-in-out; 
 }
 
 .dropdown-content a {
-    color: #333;
+    color: #2d3748;
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 10px 16px;
     display: block;
-    transition: background 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
 }
 
 .dropdown-content a:hover {
-    background: #f5f5f5;
+    background: #f8f9fa;
     color: #1a237e;
 }
-
 
 .admin-login-btn {
     background: #1a237e;
     color: white;
     text-decoration: none;
-    padding: 8px 20px;
-    border-radius: 4px;
+    padding: 10px 24px;
+    border-radius: 6px;
     display: flex;
     align-items: center;
     gap: 8px;
-    transition: background 0.3s ease;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(26, 35, 126, 0.1);
 }
 
 .admin-login-btn:hover {
     background: #151b4f;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(26, 35, 126, 0.2);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .mobile-menu-btn {

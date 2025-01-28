@@ -5,7 +5,10 @@ console.log("Starting")
 const express = require('express');
 const mongoose = require('mongoose');
 
-const router = require('./Route/StudentRoute');
+const routerS = require('./Route/StudentRoute');
+const routerT =require('./Route/TeacherRoute');
+const routerN = require('./Route/NewsEventR');
+const routerM = require('./Route/MarkRoute');
 
 const app = express();
 const cors = require('cors');
@@ -14,7 +17,11 @@ const cors = require('cors');
 
 app.use(express.json());
 app.use(cors());
-app.use("/StudentDetails",router);
+app.use("/StudentDetails",routerS);
+app.use("/TeacherDetails",routerT);
+app.use("/NewsEvent",routerN);
+app.use("/Marks",routerM)
+
 //Missing middleware
 
 

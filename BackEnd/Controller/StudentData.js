@@ -8,12 +8,10 @@ const getAllStudentData=async(req,res,next) => {
         std=await student.find();
     }catch(err){
         console.log(err);
-}
-
+    }
     if(!std){
         return res.status(404).json({message:"User not found"});
     }
-
     return res.status(200).json({std});
 
     };
