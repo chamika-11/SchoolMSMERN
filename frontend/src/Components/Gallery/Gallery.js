@@ -6,42 +6,42 @@ const Gallery = () => {
     const galleryItems = [
         {
             id: 1,
-            image: 'Gallery/IMG_20240416_053528.jpg',
+            image: 'IMG_1653.jpg',
             title: 'Annual Sports Meet 2024',
             category: 'sports',
             description: 'Students participating in annual sports meet'
         },
         {
             id: 2,
-            image: 'Gallery/IMG_20240416_053528.jpg',
+            image: 'IMG_20230423_183152.jpg',
             title: 'Cultural Program',
             category: 'cultural',
             description: 'Traditional dance performance'
         },
         {
             id: 2,
-            image: '/gallery/IMG_20240416_064330.jpg',
+            image: 'IMG_20240201_140228 (2)[1].jpg',
             title: 'Cultural Program',
             category: 'cultural',
             description: 'Traditional dance performance'
         },
         {
             id: 2,
-            image: '/gallery/IMG_20240416_064330.jpg',
+            image: 'IMG_20240416_053528.jpg',
             title: 'Cultural Program',
             category: 'cultural',
             description: 'Traditional dance performance'
         },
         {
             id: 2,
-            image: '/gallery/IMG_20240416_064330.jpg',
+            image: 'IMG_20240416_064330.jpg',
             title: 'Cultural Program',
             category: 'cultural',
             description: 'Traditional dance performance'
         },
         {
             id: 2,
-            image: '/gallery/IMG_20240416_064330.jpg',
+            image: 'BackGround.jpg',
             title: 'Cultural Program',
             category: 'cultural',
             description: 'Traditional dance performance'

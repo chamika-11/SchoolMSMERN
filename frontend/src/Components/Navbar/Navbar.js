@@ -48,9 +48,6 @@ const Navbar = () => {
                     <Link to="/activities" className="nav-link">Activities</Link>
                     <Link to="/Gallery" className="nav-link">Gallery</Link>
                     <Link to="/Contact" className="nav-link">Contact</Link>
-
-                    <Link to="/TestPage" className="nav-link">Test Page</Link>
-
                     <Link to="/loginPage" className="admin-login-btn">
                     <i className="fas fa-user"></i> Admin Login
                     </Link>

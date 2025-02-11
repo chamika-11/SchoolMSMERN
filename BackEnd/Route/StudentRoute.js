@@ -10,5 +10,4 @@ router.get("/:id",studentcontroller.getStudent);
 router.put("/:id",studentcontroller.updateStudent);
 router.delete("/:id",studentcontroller.deleteStudent);
 
-
 module.exports=router;
